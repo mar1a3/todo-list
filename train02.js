@@ -284,3 +284,27 @@ const merge = intervals => {
 };
 
 //разбирала задачу с последовательностями и треугольниками 
+
+//задача про merge two intervals leetcode 
+
+var merge = function(intervals) {
+  if(intervals.length < 2){
+    return intervals;
+  }
+intervals.sort((a,b)=> a[0]-b[0])
+  
+  let result = [intervals[0]]
+  
+  for(interval of intervals){
+    let recent = result[result.length - 1]
+
+    if(recent[1] >= interval[0]){
+      recent[1] = Math.max(recent[1],interval[1])
+    } else{
+      result.push(interval)
+    }
+  }
+  return result;
+}
+
+console.log(merge([[1,4],[2,5],[4,8]]))
