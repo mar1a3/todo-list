@@ -308,3 +308,17 @@ intervals.sort((a,b)=> a[0]-b[0])
 }
 
 console.log(merge([[1,4],[2,5],[4,8]]))
+
+
+//leetcode длина последнего слова
+function plusOne(n){
+  let n1 = n.trim().split(" ")
+  for(let i=n1.length-1;i>=0;i--){
+    return n1[i].length
+  }
+}
+
+//или
+var lengthOfLastWord = function(s) {
+    return s.trim().split(' ').at(-1).length
+};
