@@ -322,3 +322,17 @@ function plusOne(n){
 var lengthOfLastWord = function(s) {
     return s.trim().split(' ').at(-1).length
 };
+
+
+
+//делаем элементы видимыми при клике на них
+// let items = document.querySelectorAll('navlink')
+
+// for(let item of items){
+
+// item.addEventListener('click', function (e) {
+//     var nav = document.getElementById('sorry')
+//     nav.style.display = nav.style.display === 'none' ? 'block' : 'none'
+//   })
+// }
+
