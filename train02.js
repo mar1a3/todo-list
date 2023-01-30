@@ -336,3 +336,23 @@ var lengthOfLastWord = function(s) {
 //   })
 // }
 
+// в процессе
+// var maxDistToClosest = function(seats) {
+// let max = 0
+// let count = 0
+  
+//   for(let i=0;i<seats.length;i++){
+//     let current = seats[i]
+//     if(current===1){
+//       count=0
+//     }
+//     else{
+//       count+=1
+//       max = Math.max(max, Math.ceil(count/2))
+//     }
+//   }
+//   return max
+// };
+
+// console.log(maxDistToClosest([1,0,0,0,1,0,1]))
+
