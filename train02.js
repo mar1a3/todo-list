@@ -370,3 +370,34 @@ function top(n){
 }
 
 
+//в строке найти подстроку 459. Repeated Substring Pattern
+var repeatedSubstringPattern = s => {
+    let newString = (s + s).substring(1, s.length * 2 - 1)
+    
+    return newString.indexOf(s) !== -1
+}
+
+console.log(repeatedSubstringPattern('abcabc'))
+
+//понять, какие числа не по порядку (собес в тиньков)
+
+// let myNumbers = 4 4 4 4;
+// let arr = myNumbers.split(',')
+// console.log(arr)
+  
+// const findElement = arr => {
+// arr.sort(function(a,b){
+//   return a-b
+// })
+//   for(let i = 1; i < arr.length; i++) {
+//     if (arr[i] - arr[i-1] > 1) {
+//       return 'NO'
+//     }
+//   }
+
+//   return 'YES';
+// }
+
+// console.log(findElement([5,2,3,1]))
+
+
