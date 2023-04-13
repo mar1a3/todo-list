@@ -400,4 +400,15 @@ console.log(repeatedSubstringPattern('abcabc'))
 
 // console.log(findElement([5,2,3,1]))
 
+// добавление цифр по нажатию на кнопку
+//const btnNumbers = document.querySelector('.btn-numbers-list')
+// const ulList =document.querySelector('.numbers-list') 
+// let newUl = 0
+// btnNumbers.onclick =()=>{
+//     let li = document.createElement('li');
+//     li.innerHTML = newUl
+//     ulList.appendChild(li);
+//     newUl++
+//     console.log(newUl)
+// }
 
