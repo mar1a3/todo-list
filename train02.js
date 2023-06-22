@@ -24,17 +24,6 @@ each_cons([1,2,3,4], 3)
 //   }
 
 
-//3
-// function lovefunc(flower1, flower2){
-//     if(flower1 %2 ==0 && flower2 %2 != 0 || flower2 %2 ==0 && flower1 %2 != 0){
-
-//         console.log('true')
-//     }else{
-//         console.log('false')
-//     }
-// }
-// lovefunc(2,6)
-
 4//
 // function makeNegative(num) {
 //     if(num<0 || num==0){
