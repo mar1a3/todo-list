@@ -366,7 +366,6 @@ var repeatedSubstringPattern = s => {
     return newString.indexOf(s) !== -1
 }
 
-console.log(repeatedSubstringPattern('abcabc'))
 
 //понять, какие числа не по порядку (собес в тиньков)
 
