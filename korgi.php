@@ -716,7 +716,26 @@
         // echo '<pre>';
 
 
-    //урок 152
+//ВАЖНО ПРО МАССИВЫ ВЛОЖЕННЫЕ 
+            // $arr2 = [];
+            // $arr = [
+            //     '2019-12-29'=> ['name1', 'name2', 'name3', 'name4'],
+            //     '2019-12-30'=> ['name5', 'name6', 'name7'],
+            //     '2019-12-31'=> ['name8', 'name9'],
+            // ];
+            // foreach($arr as $data => $names){
+            //     foreach($names as $name){
+            //         $arr2[]=[
+            //             'data'=>$data,
+            //             'name' => $name
+            //         ];
+            //     }
+            // }
+            // echo '<pre>';
+            // var_dump($arr2);
+            // echo '<pre>';
+
+//ВАЖНО ПРО МАССИВЫ ВЛОЖЕННЫЕ
 
 
 
