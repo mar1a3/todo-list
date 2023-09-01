@@ -731,8 +731,14 @@
             //         ];
             //     }
             // }
-
-//ВАЖНО ПРО МАССИВЫ ВЛОЖЕННЫЕ
+ // echo pow(2,10);
+        // echo sqrt(245);
+        // $counter = 0;
+        // $arr = [4, 2, 5, 19, 13, 0, 10];
+        // foreach($arr as $a){
+        //     $counter+=$a*$a;
+        // }
+        // echo sqrt($counter);
 
 
 
