@@ -740,6 +740,22 @@
         // }
         // echo sqrt($counter);
 
+    <!-- СКОЛЬКО ПРОЦЕНТОВ БУКВА ЗАНИМАЕТ В СТРОКЕ -->
+<!-- <?php
+ 
+    // $data = "aaa abc q";
+    // $sum = count_chars($data, 1);
+    // $counter = count($sum);
+    //     foreach ($sum as $i => $val) {
+    //     $str1 = chr($i);
+    //     $percent = floor(($val*100)/($counter));
+    //     // echo  $str1 .' встречается в строке'. $val .' раз ."<br>"';
+    //     echo  $str1 .' это '. $percent .' процентов <br>';
+    // }
+
+
+?> -->
+
 
 
 
