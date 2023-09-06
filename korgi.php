@@ -753,7 +753,17 @@
     //     echo  $str1 .' это '. $percent .' процентов <br>';
     // }
 
+// $arr = [4, -2, 5, 19, -130, 0, 10];
+        // var_dump(min($arr));
+        // '<br>';
+        // var_dump(max($arr));
 
+        // $arr = [];
+        // while(count($arr)<11){
+        //     $arr[]='<li>'.mt_rand(2,56).'</li>';
+        // }
+
+        // var_dump($arr);
 ?> -->
 
 
