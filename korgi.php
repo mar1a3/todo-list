@@ -766,6 +766,28 @@
         // var_dump($arr);
 ?> -->
 
+	// $arr = [];
+        // while(count($arr)<11){
+        //     $arr[]='<li>'.mt_rand(2,56).'</li>';
+        // }
+
+        // var_dump($arr);
+
+        // $a = -3;
+        // $b =-5;
+        // echo abs($a-$b);
+
+        // $str = 'London';
+        // echo lcfirst($str);
+        // $str = 'лондон';
+        // echo mb_strlen($str);
+        // $password = '12345';
+        // if(strlen($password)>5 and strlen($password)<10){
+        //     echo 'pswrd ok';
+        // }
+        // else{
+        //     echo 'create new password';
+        // }
 
 
 
