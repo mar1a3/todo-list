@@ -789,7 +789,24 @@
         //     echo 'create new password';
         // }
 
+// $str = 'html css php';
+        // echo substr($str, 0 , 4) .' - '. substr($str, 5, 3 ).' - '. substr($str, -3)
 
+            // $str = 'hello';
+            // echo substr($str, -3);
+
+            // $str = 'htt://';
+            // if(substr($str,0) =='http://' or substr($str,0) =='https://'){
+            //     echo '123';
+            // }
+
+            // $str = '1234';
+            // if(strlen($str)>5){
+            //   echo substr($str, 5).'...';
+            // }
+            // if(strlen($str)<=5){
+            //     echo $str;
+            // };
 
 
 
