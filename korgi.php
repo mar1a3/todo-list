@@ -808,7 +808,22 @@
             //     echo $str;
             // };
 
+ // $str = '31.12.2013';
+            // echo str_replace('.', '-' , $str);
 
+            // $str = 'aaabbbc';
+            // // echo str_replace('aaabbbc',1112223,$str);
+            // $length = strlen($str);
+            // for($n=0;$n<$length;$n++){
+            //     if($str[$n] == 'a'){
+            //         str_replace('a',1,$str[$n]);
+            //     }
+            // }
+            // echo $str;
+
+            // echo str_replace(['1','2','3','4'],'','1a2b3c4b5d6e7f8g9h0');
+            //  $str = 'abcabc';
+            //  echo strtr($str, ['a'=>1, 'b'=>2,'c'=>3]);
 
 
 
