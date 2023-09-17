@@ -825,7 +825,19 @@
             //  $str = 'abcabc';
             //  echo strtr($str, ['a'=>1, 'b'=>2,'c'=>3]);
 
-
+// $str = 'abcde';
+                // echo substr_replace($str, '!!!', 3);
+                // echo strpos('aaa aaa aaa aaa aaa',' ',5);
+                // $str = 'htp://qwer.t..y';
+                // if(strpos($str, 'http://') ===0){
+                //     echo 'yes';
+                // }
+                // else{
+                //     echo 'no';
+                // }
+                // $arr = ['html', 'css', 'php'];
+                // $str = implode(' ', $arr);
+                // echo $str;
 
         ?>
 </body>
