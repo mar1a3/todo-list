@@ -9,9 +9,7 @@
 
 
     <?php 
-        $a = 'codepen.png';
-        $b = 'img';
-        // for($n=0; $n<=10;$n++){
+
         //     echo '<br>'.$n.'</br>';
         // }
         // echo '<p><b>'.'Ваше имя:'.'</b><br>';
