@@ -400,3 +400,16 @@ var repeatedSubstringPattern = s => {
 //     console.log(newUl)
 // }
 
+
+
+
+//     function count(string) {
+//         var result = {};
+//         let newString = string.split('');
+//         newString.forEach(function(a){
+//         result[a]?++result[a]:result[a]=1
+// }); 
+//     console.log(result)
+//     }
+//     count('aba')
+
