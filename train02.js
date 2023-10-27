@@ -413,3 +413,18 @@ var repeatedSubstringPattern = s => {
 //     }
 //     count('aba')
 
+
+// function flatten(...arr){
+//     const result =[]
+//     while(arr.length){
+//         let el = arr.shift();
+//         if(Array.isArray(el)){
+//             arr.unshift(...el);
+//             continue;
+//         }
+//         result.push(el);
+//     }
+//     return result;
+// }
+// console.log(flatten(1,[2,3],[[4]],[[5],6]))
+
