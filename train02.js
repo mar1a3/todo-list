@@ -450,3 +450,21 @@ function mergeSort(arr){
 }
 mergeSort([8,3,7,12,1,4])
 
+
+// function lefted(arr,num){
+//     let result = []
+//     let main = [];
+//     for(let i=0;i<=num;i++){
+//         main.push(i);
+//     }
+//     for(el in main){
+//         if(arr.indexOf(main[el])== -1){
+//             result.push(main[el])
+//         }
+//     }
+//     console.log(result)
+    // Object.keys(arr).forEach(key=>console.log(key))
+    
+}
+lefted([0,2,8,5],10)
+
