@@ -465,6 +465,6 @@ mergeSort([8,3,7,12,1,4])
 //     console.log(result)
     // Object.keys(arr).forEach(key=>console.log(key))
     
-}
-lefted([0,2,8,5],10)
+// }
+// lefted([0,2,8,5],10)
 
