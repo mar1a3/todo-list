@@ -428,27 +428,27 @@ var repeatedSubstringPattern = s => {
 // }
 // console.log(flatten(1,[2,3],[[4]],[[5],6]))
 
-function mergeSort(arr){
-    let result = [];
-    let medium = arr.length/2;
-    let left = arr.splice(0,medium).sort();
-    arr.sort();
-    while(left.length && arr.length){
-        if(left[0]<arr[0]){
-            result.push(left.shift());
-            console.log('левая часть '+left)
-            continue;
-        }
-        else{
-             result.push(arr.shift());
-             console.log('правая часть '+arr)
-        }
-    }
-    console.log(result);
+// function mergeSort(arr){
+//     let result = [];
+//     let medium = arr.length/2;
+//     let left = arr.splice(0,medium).sort();
+//     arr.sort();
+//     while(left.length && arr.length){
+//         if(left[0]<arr[0]){
+//             result.push(left.shift());
+//             console.log('левая часть '+left)
+//             continue;
+//         }
+//         else{
+//              result.push(arr.shift());
+//              console.log('правая часть '+arr)
+//         }
+//     }
+//     console.log(result);
 
-    return [...result,...left,...arr];
-}
-mergeSort([8,3,7,12,1,4])
+//     return [...result,...left,...arr];
+// }
+// mergeSort([8,3,7,12,1,4])
 
 
 // function lefted(arr,num){
