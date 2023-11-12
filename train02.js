@@ -468,3 +468,36 @@ var repeatedSubstringPattern = s => {
 // }
 // lefted([0,2,8,5],10)
 
+        //Задача: написать функцию для прохождения 
+        //типового задания с числами в тесте iq — из списка чисел найти то, 
+        //которое отличается по чётности от остальных, и вернуть его позицию.
+
+        //1.вариант
+
+        // function checkNums(nums){
+        //     const arr = nums.split(' ')
+        //     const even = [];
+        //     const odd = [];
+        //     let findNumber = 0;
+        //     arr.forEach(element => {
+        //         if(Number(element)%2==0){
+        //             even.push(element)
+        //         }
+        //         else{
+        //             odd.push(element)
+        //         }
+        //     });
+        //     if(even.length>odd.length){
+        //         findNumber+= odd.join('')
+        //     }
+        //     else{
+        //         findNumber+= even.join('')
+        //     }
+        //     for(let i =0;i<arr.length;i++){
+        //         if(Number(arr[i]) == findNumber){
+        //             console.log(i+1)
+        //         }
+        //     }
+        // }
+        // checkNums("1 2 1 1");
+
