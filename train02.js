@@ -501,3 +501,22 @@ var repeatedSubstringPattern = s => {
         // }
         // checkNums("1 2 1 1");
 
+        //2.вариант
+
+    // function iqTest(numbers) {
+    //   const remainders = numbers.split(" ").map(x => x % 2);
+    //   console.log(remainders);
+    //   const sum = remainders.reduce((a, b) => a + b);
+    // //   console.log(sum);
+    //   const target = sum > 1 ? 0 : 1;
+    //   console.log(target)
+
+    //   console.log('вызов target')
+    //   console.log(remainders.indexOf(target)+1)
+    // //   return remainders.indexOf(target) + 1;
+    // }
+
+
+    // iqTest("2 4 7 8 10");
+    // iqTest("1 2 1 1");
+
