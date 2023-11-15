@@ -520,3 +520,19 @@ var repeatedSubstringPattern = s => {
     // iqTest("2 4 7 8 10");
     // iqTest("1 2 1 1");
 
+
+// 2.
+        // let salaries = {
+        // };
+        // const maxSalary = Object.values(salaries).sort()[Object.values(salaries).sort().length-1];
+        // if(salaries.length){
+        // for(let key in salaries){
+        //     if(salaries[key] == maxSalary){
+        //         console.log(key)
+        //     }
+        // }
+        // }
+        // else{
+        //     console.log(null)
+        // }
+
