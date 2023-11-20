@@ -515,11 +515,3 @@ var repeatedSubstringPattern = s => {
     //   console.log(remainders.indexOf(target)+1)
     // //   return remainders.indexOf(target) + 1;
     // }
-
-
-    // iqTest("2 4 7 8 10");
-    // iqTest("1 2 1 1");
-
-
-
-
