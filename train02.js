@@ -511,7 +511,5 @@ var repeatedSubstringPattern = s => {
     //   const target = sum > 1 ? 0 : 1;
     //   console.log(target)
 
-    //   console.log('вызов target')
-    //   console.log(remainders.indexOf(target)+1)
     // //   return remainders.indexOf(target) + 1;
     // }
