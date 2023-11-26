@@ -495,7 +495,6 @@ var repeatedSubstringPattern = s => {
         //     }
         //     for(let i =0;i<arr.length;i++){
         //         if(Number(arr[i]) == findNumber){
-        //             console.log(i+1)
         //         }
         //     }
         // }
