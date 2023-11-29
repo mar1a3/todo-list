@@ -508,7 +508,6 @@ var repeatedSubstringPattern = s => {
     //   const sum = remainders.reduce((a, b) => a + b);
     // //   console.log(sum);
     //   const target = sum > 1 ? 0 : 1;
-    //   console.log(target)
 
     // //   return remainders.indexOf(target) + 1;
     // }
