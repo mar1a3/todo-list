@@ -511,3 +511,13 @@ var repeatedSubstringPattern = s => {
 
     // //   return remainders.indexOf(target) + 1;
     // }
+
+    // let arr = ['h','e','l','l','o'];
+    // let first = 0;
+    // let last = arr.length -1;
+    // while(first<last){
+    //     [arr[first],arr[last]] = [arr[last],arr[first]];
+    //     first++;
+    //     last--;
+    //     console.log(arr[first]);
+    // }
