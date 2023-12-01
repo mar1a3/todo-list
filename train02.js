@@ -521,3 +521,64 @@ var repeatedSubstringPattern = s => {
     //     last--;
     //     console.log(arr[first]);
     // }
+
+
+// function sayName(name){
+//     return function(){
+//         console.log('Say Hi'+name);
+//     }
+// }
+// const sayHi = sayName('Vasya');
+// sayHi();
+
+// var expect = function(val) {
+//     function toBe(val2){
+//         if(val == val2){
+//             return true;
+//         }
+//         if(val !== val2){
+//             throw new Error("Not Equal");
+//         }
+//     }
+//     function notToBe(val3){
+//         if(val !== val3){
+//             return true;
+//         }
+//         if(val == val3){
+//             throw new Error("Equal");
+//         }
+//     }
+//     return {
+//         toBe,
+//         notToBe
+//     };
+// };
+
+var createCounter = function(init) {
+    let newInit = init;
+    function increment(){
+        newInit++;
+        console.log(newInit +' increment');
+    }
+    function reset(){
+        console.log(init+' reset');
+    }
+    function decrement(){
+        let decrInit = init;
+        decrInit--;
+        console.log(decrInit+' decrement');
+    }
+    return{
+        increment,
+        reset,
+        decrement
+    }
+};
+
+const counter = createCounter(0);
+counter.increment(); // 1
+counter.increment(); // 1
+counter.decrement(); // 2
+// counter.reset(); // 1
+// counter.reset(); // 1
+
