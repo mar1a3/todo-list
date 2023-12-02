@@ -582,3 +582,14 @@ counter.decrement(); // 2
 // counter.reset(); // 1
 // counter.reset(); // 1
 
+var filter = function(arr, fn){
+let transformedArray = [];
+for(let i =0;i<arr.length;i++){
+   if(fn(arr[i],i,arr)){
+        transformedArray.push(arr[i])
+    }
+}
+    return transformedArray;
+};
+
+
