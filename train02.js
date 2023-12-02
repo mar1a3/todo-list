@@ -593,3 +593,35 @@ for(let i =0;i<arr.length;i++){
 };
 
 
+//bubbleSort с преобр.нового массива
+// function bubbleSort(arr){
+//     let result =[];
+//     while(arr.length>0){
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]>arr[i+1]){
+//             [arr[i],arr[i+1]] = [arr[i+1],arr[i]];
+//         }
+//     }
+//     result.unshift(arr[arr.length-1])
+//     arr.pop()
+//     // console.log(arr)
+//     // console.log(result)
+//     }
+//     console.log(result)
+// }
+// bubbleSort([2,0,2,1,1,0])
+
+//bubbleSort без нового массива
+function bubbleSort(arr){
+//     for(let i=0;i<arr.length;i++){
+//         for(let j=0;j<arr.length;j++){
+//         if(arr[j]>arr[j+1]){
+//             [arr[j],arr[j+1]] = [arr[j+1],arr[j]]
+//         }
+//         console.log(arr)
+//     }
+//     }
+    
+// }
+// bubbleSort([23,0,4,0,1,10])
+
