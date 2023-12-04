@@ -625,3 +625,26 @@ function bubbleSort(arr){
 // }
 // bubbleSort([23,0,4,0,1,10])
 
+  //задача на hirshIndex
+   let arr = [6,3,1,2,7];
+function bubbleSort(arr){
+    for(let i=0; i<arr.length-1;i++){
+        for(let j=0 ;j<arr.length-1;j++){
+            if(arr[j]>arr[j+1]){
+                [arr[j],arr[j+1]] = [arr[j+1],arr[j]];
+            }
+        }
+    }
+    let n = arr.length, hIndex =1;
+    for(let i = n-1; i>=0; i--){
+        if(arr[i] < hIndex){
+            console.log(hIndex-1);
+            return hIndex-1;
+        }
+        hIndex++;
+    }
+    console.log(n)
+    return n;
+}
+bubbleSort(arr);
+
