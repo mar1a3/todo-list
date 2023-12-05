@@ -648,3 +648,49 @@ function bubbleSort(arr){
 }
 bubbleSort(arr);
 
+     //мое решение, но оно не работает на проверку большего 3х значного числа.
+   //возвращает всегда только трехзначное первое какое попалось
+    var largestGoodInteger = function(str){
+    let arr = str.split('');
+    let res = [];
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]==arr[i+1]){
+            if(arr[i+1]==arr[i+2]){
+                res.push(arr[i],arr[i+1],arr[i+2]);
+               break;
+            }
+        }
+    }
+    if(!res){
+        return "";
+    }
+    else{
+        console.log(res)
+    }
+}
+  largestGoodInteger('6777133339');
+  1333367779
+  6777133339
+  2300019
+  3200014888
+
+   //решение чат
+   function findMaxGoodInteger(num) {
+  let maxGoodInt = "";
+  for (let i = 0; i <= num.length-3; i++) {
+    let subStr = num.substring(i, i + 3);
+    // console.log(subStr);
+    if (subStr[0] === subStr[1] && subStr[1] === subStr[2]) {
+      if (subStr > maxGoodInt) {
+          console.log(subStr +' bolshe')
+        maxGoodInt = subStr;
+      }
+    }
+  }
+  console.log(maxGoodInt)
+}
+findMaxGoodInteger('32000148888')
+
+   //здесь на каждой итерации сравнивается новое значение строки с предыдущим
+   //если пред. меньше, то записывается новое
+
