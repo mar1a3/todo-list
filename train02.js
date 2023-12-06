@@ -693,4 +693,32 @@ findMaxGoodInteger('32000148888')
 
    //здесь на каждой итерации сравнивается новое значение строки с предыдущим
    //если пред. меньше, то записывается новое
+ //subArray sum equals k
+   //решение с использованием префиксных сумм
+   var subarraySum = function(nums, k) {
+    let counter = 0;
+    let prefixSum = 0;
+    let map = new Map();
+    map.set(0, 1);
+    for (let i=0;i<nums.length;i++) {
+        prefixSum += nums[i];
+        if (map.has(prefixSum - k)) counter += map.get(prefixSum - k);
+        if (map.has(prefixSum)) map.set(prefixSum, map.get(prefixSum) + 1);
+        else map.set(prefixSum, 1);
+    }
+    return counter;
+};
 
+   //вывести частоту вхождений числа в массив
+   var majorityElement = function(nums) {
+//     let obj = {};
+//     for(let i=0; i<nums.length;++i){
+//         if(!obj[nums[i]]){
+//             obj[nums[i]] = 0;
+//         }
+//             obj[nums[i]]++;
+//     }
+// let result = Object.keys(obj).reduce((a,b)=>obj[a]>obj[b]?a:b);
+// console.log(result)
+// };
+// majorityElement([3,2,3]);
