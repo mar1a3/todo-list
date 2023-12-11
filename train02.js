@@ -722,3 +722,25 @@ findMaxGoodInteger('32000148888')
 // console.log(result)
 // };
 // majorityElement([3,2,3]);
+     
+     //вернуть число, которое встречается чаще, чем 25%
+// Given an integer array sorted in non-decreasing order, 
+// there is exactly one integer in the array that occurs more than 25% of the time, 
+// return that integer.
+//       var findSpecialInteger = function(arr) {
+//     const l = arr.length;
+//     const appear = (25*l)/100;
+//     const obj = {};
+
+//     for(let i=0; i<arr.length; ++i){
+//         if(!obj[arr[i]]){
+//             obj[arr[i]] = 0;
+//         }
+//         obj[arr[i]]++;
+//     }
+//     const values = Object.values(obj);
+//     const result = values.filter((value)=>value>appear);
+//     const result2 = Object.keys(obj).find(key=>obj[key] == result.join())
+//     console.log(result2)
+// };
+// findSpecialInteger([1,2,2,6,6,6,6,7,10])
