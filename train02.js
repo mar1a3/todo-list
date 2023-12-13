@@ -754,3 +754,50 @@ findMaxGoodInteger('32000148888')
 //   }
 // }
 // return result
+
+     //Longest consequtive sequence 
+      var longestConsecutive = function(nums) {
+  if (nums == null || nums.length === 0) return 0;
+  
+  const set = new Set(nums);
+  let max = 0;
+
+  for (let num of set) {
+    if (set.has(num - 1)) continue;  // make sure starting from the beginning of sequence
+
+    let currNum = num;
+    let currMax = 1;
+
+    while (set.has(currNum + 1)) {
+      currNum++;
+      currMax++;
+    }
+    max = Math.max(max, currMax);
+  }
+
+  return max;
+}
+
+//1394. Find Lucky Integer in an Array
+
+      var findLucky = function(arr) {
+    const obj = {};
+    let result = -1;
+    for(let i=0; i<arr.length; ++i){
+        if(!obj[arr[i]]){
+            obj[arr[i]] = 0;
+        }
+        obj[arr[i]]++;
+     }
+     
+    Object.entries(obj).forEach((entry) => {
+    	const [key, value] = entry;
+    	if(Number(key) == value){
+    	        	    if(value>result){
+    	        result = value;
+    	    }
+    	}
+    });
+    return result
+    
+};
