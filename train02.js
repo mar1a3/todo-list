@@ -799,5 +799,4 @@ findMaxGoodInteger('32000148888')
     	}
     });
     return result
-    
 };
