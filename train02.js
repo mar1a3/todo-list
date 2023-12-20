@@ -780,23 +780,23 @@ findMaxGoodInteger('32000148888')
 
 //1394. Find Lucky Integer in an Array
 
-      var findLucky = function(arr) {
-    const obj = {};
-    let result = -1;
-    for(let i=0; i<arr.length; ++i){
-        if(!obj[arr[i]]){
-            obj[arr[i]] = 0;
-        }
-        obj[arr[i]]++;
-     }
+//       var findLucky = function(arr) {
+//     const obj = {};
+//     let result = -1;
+//     for(let i=0; i<arr.length; ++i){
+//         if(!obj[arr[i]]){
+//             obj[arr[i]] = 0;
+//         }
+//         obj[arr[i]]++;
+//      }
      
-    Object.entries(obj).forEach((entry) => {
-    	const [key, value] = entry;
-    	if(Number(key) == value){
-    	        	    if(value>result){
-    	        result = value;
-    	    }
-    	}
-    });
-    return result
-};
+//     Object.entries(obj).forEach((entry) => {
+//     	const [key, value] = entry;
+//     	if(Number(key) == value){
+//     	        	    if(value>result){
+//     	        result = value;
+//     	    }
+//     	}
+//     });
+//     return result
+// };
