@@ -553,43 +553,43 @@ var repeatedSubstringPattern = s => {
 //     };
 // };
 
-var createCounter = function(init) {
-    let newInit = init;
-    function increment(){
-        newInit++;
-        console.log(newInit +' increment');
-    }
-    function reset(){
-        console.log(init+' reset');
-    }
-    function decrement(){
-        let decrInit = init;
-        decrInit--;
-        console.log(decrInit+' decrement');
-    }
-    return{
-        increment,
-        reset,
-        decrement
-    }
-};
+// var createCounter = function(init) {
+//     let newInit = init;
+//     function increment(){
+//         newInit++;
+//         console.log(newInit +' increment');
+//     }
+//     function reset(){
+//         console.log(init+' reset');
+//     }
+//     function decrement(){
+//         let decrInit = init;
+//         decrInit--;
+//         console.log(decrInit+' decrement');
+//     }
+//     return{
+//         increment,
+//         reset,
+//         decrement
+//     }
+// };
 
-const counter = createCounter(0);
-counter.increment(); // 1
-counter.increment(); // 1
-counter.decrement(); // 2
-// counter.reset(); // 1
-// counter.reset(); // 1
+// const counter = createCounter(0);
+// counter.increment(); // 1
+// counter.increment(); // 1
+// counter.decrement(); // 2
+// // counter.reset(); // 1
+// // counter.reset(); // 1
 
-var filter = function(arr, fn){
-let transformedArray = [];
-for(let i =0;i<arr.length;i++){
-   if(fn(arr[i],i,arr)){
-        transformedArray.push(arr[i])
-    }
-}
-    return transformedArray;
-};
+// var filter = function(arr, fn){
+// let transformedArray = [];
+// for(let i =0;i<arr.length;i++){
+//    if(fn(arr[i],i,arr)){
+//         transformedArray.push(arr[i])
+//     }
+// }
+//     return transformedArray;
+// };
 
 
 //bubbleSort с преобр.нового массива
