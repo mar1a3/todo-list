@@ -359,11 +359,11 @@ function top(n){
 
 
 //в строке найти подстроку 459. Repeated Substring Pattern
-var repeatedSubstringPattern = s => {
-    let newString = (s + s).substring(1, s.length * 2 - 1)
+// var repeatedSubstringPattern = s => {
+//     let newString = (s + s).substring(1, s.length * 2 - 1)
     
-    return newString.indexOf(s) !== -1
-}
+//     return newString.indexOf(s) !== -1
+// }
 
 
 //понять, какие числа не по порядку (собес в тиньков)
