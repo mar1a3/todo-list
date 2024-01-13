@@ -286,16 +286,16 @@ intervals.sort((a,b)=> a[0]-b[0])
   for(interval of intervals){
     let recent = result[result.length - 1]
 
-    if(recent[1] >= interval[0]){
-      recent[1] = Math.max(recent[1],interval[1])
-    } else{
-      result.push(interval)
-    }
-  }
-  return result;
-}
+//     if(recent[1] >= interval[0]){
+//       recent[1] = Math.max(recent[1],interval[1])
+//     } else{
+//       result.push(interval)
+//     }
+//   }
+//   return result;
+// }
 
-console.log(merge([[1,4],[2,5],[4,8]]))
+// console.log(merge([[1,4],[2,5],[4,8]]))
 
 
 //leetcode длина последнего слова
