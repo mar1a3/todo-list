@@ -686,9 +686,9 @@ each_cons([1,2,3,4], 3)
       }
     }
   }
-  console.log(maxGoodInt)
-}
-findMaxGoodInteger('32000148888')
+//   console.log(maxGoodInt)
+// }
+// findMaxGoodInteger('32000148888')
 
    //здесь на каждой итерации сравнивается новое значение строки с предыдущим
    //если пред. меньше, то записывается новое
