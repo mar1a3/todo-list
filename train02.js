@@ -649,7 +649,7 @@ each_cons([1,2,3,4], 3)
 
      //мое решение, но оно не работает на проверку большего 3х значного числа.
    //возвращает всегда только трехзначное первое какое попалось
-    var largestGoodInteger = function(str){
+    // var largestGoodInteger = function(str){
     let arr = str.split('');
     let res = [];
     for(let i=0;i<arr.length;i++){
