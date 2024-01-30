@@ -86,7 +86,7 @@ each_cons([1,2,3,4], 3)
 // }
 // console.log(sum('a',5))
 
-//8
+8
 // function sum(name){
 //   if(name[0] == 'R'|| name[0]== 'r'){
 //     return name + " plays banjo"
