@@ -799,3 +799,37 @@ each_cons([1,2,3,4], 3)
 //     });
 //     return result
 // };
+
+
+           парсер csv
+      #4.8 (задание 1 csv)
+# import requests
+# from bs4 import BeautifulSoup
+# import csv
+# with open('res.csv', 'w', encoding='utf-8-sig', newline='') as file:
+#     writer = csv.writer(file)
+#     writer.writerow([
+#     'Наименование',"Бренд"
+#         ,"Форм-фактор","Ёмкость","Объём буф.памяти","Цена"
+# ])
+# for page in range(1,5):
+#     new_link = f'https://parsinger.ru/html/index4_page_{page}.html'
+#     response = requests.get(new_link)
+#     response.encoding = 'utf-8'
+#     soup = BeautifulSoup(response.text, 'lxml')
+#
+#     items = soup.find_all('div', class_='item')
+#     for item in items:
+#         name = item.find('a', class_='name_item').text.strip()
+#         brand = item.select_one('li:nth-child(1)').text.strip().split(':')[1]
+#         form = item.select_one('li:nth-child(2)').text.strip().split(':')[1]
+#         capacity = item.select_one('li:nth-child(3)').text.strip().split(':')[1]
+#         memory = item.select_one('li:nth-child(4)').text.strip().split(':')[1]
+#         price = item.find('p', class_='price').text.strip().split(':')[0]
+#
+#         file = open('res.csv', 'a', encoding='utf-8-sig', newline='')
+#         writer = csv.writer(file)
+#         writer.writerow([
+#             name,brand,form, capacity, memory, price
+#          ])
+#         print('Gotovo')
