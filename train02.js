@@ -832,4 +832,4 @@ each_cons([1,2,3,4], 3)
 #         writer.writerow([
 #             name,brand,form, capacity, memory, price
 #          ])
-#         print('Gotovo')
+// #         print('Gotovo')
