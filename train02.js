@@ -40,8 +40,8 @@
 
 //6
 // function countPositivesSumNegatives(input) {
-//     // your code here
-//   }
+    // your code here
+  }
 
 
 
