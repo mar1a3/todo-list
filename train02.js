@@ -57,8 +57,8 @@
 //     new_prices2.push(prices[i]);
 //   }
 // }
-// console.log(new_prices)
-console.log(new_prices2)
+// // console.log(new_prices)
+// console.log(new_prices2)
 
 
 
