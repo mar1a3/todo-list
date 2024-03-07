@@ -37,6 +37,7 @@
 .done{
   width: 360px;
   height: 20px;
+  text-decoration: line-through;
   background-color: rgba(110, 34, 101, 0.614);
 }
 
