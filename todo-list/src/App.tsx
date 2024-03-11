@@ -9,30 +9,18 @@ interface Task {
 }
 
 const App: React.FC = () => {
-    //сначала пыталась как-то по уродски залить картинку. так вообще делают?
-    // const [image, setImage] = React.useState([
-    //   {id:1, src: './styles/1.jpg'}
-    // ]);
-    // const handleDeleteImage = ()=>{
-    //   setImage([]);
-    // }
 
     const [image, setImage] = React.useState(true);
-    //текст из инпута
     const [inputValue, setInputValue] = React.useState<string>('');
-    //список задач
     const [tasks, setTask] = React.useState<{ [key: number]: Task }>({});
-    //проверяю, есть ли галочка на чекбоксе
     const [isChecked, setIsChecked] = React.useState<boolean>(false);
 
     const handleInput: React.ChangeEventHandler<HTMLInputElement> = e => {
         setInputValue(e.target.value);
     };
 
-    const addTask = (e: React.SyntheticEvent) => {
-        e.preventDefault();
+    const addTask = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (inputValue) {
-            //чтобы снегерить уникальный id (мб не надо это 🥴)
             const taskId = Date.now();
             setTask(prevTasks => ({
                 ...prevTasks,
