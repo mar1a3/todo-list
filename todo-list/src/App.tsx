@@ -1,6 +1,8 @@
-import React, { MouseEventHandler, PropsWithChildren, useState } from 'react';
+
+
+import React from 'react';
 import './styles/main.css';
-import myImage from './styles/1.jpg';
+import MyImage from './styles/1.png';
 
 interface Task {
     id: number;
@@ -11,14 +13,14 @@ interface Task {
 const App: React.FC = () => {
 
     const [image, setImage] = React.useState(true);
-    const [inputValue, setInputValue] = React.useState<string>('');
-    const [tasks, setTask] = React.useState<[]>([]);
+    const [inputValue, setInputValue] = React.useState('');
+    const [tasks, setTask] = React.useState<Task[]>([]);
 
-    const handleInput = (React.ChangeEventHandler<HTMLInputElement>) => {
+    const handleInput = (e:React.ChangeEvent<HTMLInputElement>) => {
         setInputValue(e.target.value);
     };
 
-    const addTask = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const addTask = (e: any) => {
         if (inputValue) {
             const taskId = Math.random();
             setTask(prevTasks => ({
@@ -55,16 +57,15 @@ const App: React.FC = () => {
                 <button onClick={addTask} className="add">
                     add
                 </button>
-            {!setTask.length && (
+            {tasks.length === 0 && (
                 <div className="img-field">
                     You don't have any tasks yet 😬
-                    <img src={myImage} alt="Description" />
+                    <img src={MyImage} alt="Description" />
                 </div>
             )}
             <div className="tasks">
                 {Object.values(tasks).map(task => (
                     <div key={task.id} className="task">
-                        {/* если чекбокс с галкой, то крашу инпут классом done */}
                         <p className={task.isChecked ? 'done' : ''}>
                             {task.text}
                         </p>
