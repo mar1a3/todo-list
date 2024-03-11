@@ -10,7 +10,7 @@ interface Task {
     isChecked: boolean;
 }
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
 
     const [image, setImage] = React.useState(true);
     const [inputValue, setInputValue] = React.useState('');
@@ -82,4 +82,4 @@ const App: React.FC = () => {
     );
 };
 
-export default App;
+
