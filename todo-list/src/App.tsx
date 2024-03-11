@@ -9,7 +9,7 @@ interface Task {
     text: string;
     isChecked: boolean;
 }
-
+//1
 export const App: React.FC = () => {
 
     const [image, setImage] = React.useState(true);
