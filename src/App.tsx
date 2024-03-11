@@ -4,7 +4,7 @@ import { MainPage } from './pages/MainPage';
 
 
 
-function App() {
+export const App =()=>{
     return (
         <div className="App">
             <MainPage />
@@ -12,4 +12,4 @@ function App() {
     );
 }
 
-export default App;
+
