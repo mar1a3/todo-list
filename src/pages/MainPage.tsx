@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
-import Navigation from '../components/Navigation/Navigation';
-import Header from '../components/Header/Header';
+import {Navigation} from '../components/Navigation/Navigation';
+import {Header} from '../components/Header/Header';
 
-import { Input } from 'antd';
-import TodoItem from '../components/TodoItem/TodoItem';
-import NoContent from '../components/Navigation/icons/add-task.png';
+import { Input } from '../components/Input/Input';
+import {TodoItem} from '../components/TodoItem/TodoItem';
+import NoContent from '../assets/icons/todayTask.png';
 
 import { ITodoItem } from '../types/types';
 import './style.css';
 
-const MainPage = () => {
+export const MainPage = () => {
+
     const [inputStr, setInputStr] = useState('');
     const [todoList, setTodoList] = useState<ITodoItem[]>([]);
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = e.target.value;
+    const handleInputChange = (value: string) => {
         setInputStr(value);
-    };
+      };
 
     const handlePressEnter = (e: any) => {
         const value = e.target.value;
@@ -59,9 +59,8 @@ const MainPage = () => {
             <div className="search-bar">
             <Input
                 onPressEnter={handlePressEnter}
-                onChange={handleChange}
+                onInputChange={handleInputChange}
                 value={inputStr}
-                placeholder="Type the task"
             />
             </div>
             <div className="tasks-block">
@@ -86,4 +85,3 @@ const MainPage = () => {
     );
 };
 
-export { MainPage };

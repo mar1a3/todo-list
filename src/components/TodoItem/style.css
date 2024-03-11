@@ -34,9 +34,7 @@
   white-space: nowrap;
   transition: 0.3s;
 }
-.done{
-  width: 360px;
-  height: 20px;
-  background-color: rgba(110, 34, 101, 0.614);
+.tasks-block li.tasks-block-li.done{
+  background-color: rgba(48, 224, 189, 0.614);
 }
 

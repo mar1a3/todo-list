@@ -1,13 +1,12 @@
 import React from 'react';
 import './style.css';
-import todayTasks from './icons/sun.png';
-import checkMark from './icons/check-mark.png';
-import list from './icons/to-do-list.png';
-import warning from './icons/warning.png';
+import TodayTasks from '../../assets/icons/todayTask.png';
+import CheckMark from '../../assets/icons/checkMark.png';
+import List from '../../assets/icons/toDoList.png';
+import Warning from '../../assets/icons/warning.png';
 
 
-
-const Navigation: React.FC = () => {
+export const Navigation: React.FC = () => {
     return (
         <nav className={"navigation"}>
             <div className={"menu-circle"}></div>
@@ -21,28 +20,28 @@ const Navigation: React.FC = () => {
             <ul>
                 <li className={"nav-item"}>
                     <a href="/#">
-                        <img src={todayTasks} alt=""></img>
+                        <img src={TodayTasks} alt=""></img>
                         <p>Today tasks</p>
                     </a>
                 </li>
 
                 <li className={"nav-item"}>
                     <a href="/#">
-                        <img src={checkMark} alt=""></img>
+                        <img src={CheckMark} alt=""></img>
                         <p>Done</p>
                     </a>
                 </li>
 
                 <li className={"nav-item"}>
                     <a href="/#">
-                        <img src={list} alt=""></img>
+                        <img src={List} alt=""></img>
                         <p>Planned</p>
                     </a>
                 </li>
 
                 <li className={"nav-item"}>
                     <a href="/#">
-                        <img src={warning} alt=""></img>
+                        <img src={Warning} alt=""></img>
                         <p>Not completed</p>
                     </a>
                 </li>
@@ -51,4 +50,4 @@ const Navigation: React.FC = () => {
     );
 };
 
-export default Navigation;
+

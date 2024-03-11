@@ -41,6 +41,7 @@
 .nav-item{
     padding:5px 5px;
     margin-top: 10px;
+    list-style: none;
   }
 .nav-item a {
     display: flex;
