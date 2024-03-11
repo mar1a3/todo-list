@@ -12,21 +12,19 @@ const App: React.FC = () => {
 
     const [image, setImage] = React.useState(true);
     const [inputValue, setInputValue] = React.useState<string>('');
-    const [tasks, setTask] = React.useState<{ [key: number]: Task }>({});
-    const [isChecked, setIsChecked] = React.useState<boolean>(false);
+    const [tasks, setTask] = React.useState<[]>([]);
 
-    const handleInput: React.ChangeEventHandler<HTMLInputElement> = e => {
+    const handleInput = (React.ChangeEventHandler<HTMLInputElement>) => {
         setInputValue(e.target.value);
     };
 
     const addTask = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (inputValue) {
-            const taskId = Date.now();
+            const taskId = Math.random();
             setTask(prevTasks => ({
                 ...prevTasks,
                 [taskId]: { id: taskId, text: inputValue, isChecked: false },
             }));
-            // setTask([...tasks,inputValue]);
             setInputValue('');
             setImage(false);
         }
@@ -47,7 +45,6 @@ const App: React.FC = () => {
             <h1>
                 <div className="title">Todo list</div>
             </h1>
-            <form action="">
                 <input
                     type="text"
                     value={inputValue}
@@ -58,16 +55,10 @@ const App: React.FC = () => {
                 <button onClick={addTask} className="add">
                     add
                 </button>
-            </form>
-            {image && (
+            {!setTask.length && (
                 <div className="img-field">
                     You don't have any tasks yet 😬
                     <img src={myImage} alt="Description" />
-                    {/* {image.map((img)=>(
-            <div key = {img.id}>
-              <img src={img.src} alt={`Image ${img.id}`} />
-            </div>
-          ))} */}
                 </div>
             )}
             <div className="tasks">
