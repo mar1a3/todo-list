@@ -13,10 +13,9 @@ export const Input: React.FC<InputConponentProps> = ({onInputChange,onPressEnter
             onPressEnter(e);
         }
     }
-
     return (
         <div className="search-bar">
-        <input type="text" placeholder="Type the task" onChange={handleChange} onKeyDown={handleKeyPress} value={value}/>
+        <input type="text" placeholder="Type your task" onChange={handleChange} onKeyDown={handleKeyPress} value={value}/>
       </div>
     );
 };

@@ -2,9 +2,8 @@ import React from 'react';
 import './style.css';
 import TodayTasks from '../../assets/icons/add-task.png';
 import CheckMark from '../../assets/icons/check-mark.png';
-import List from '../../assets/icons/to-do-list.png';
+import ToDoList from '../../assets/icons/to-do-list.png';
 import Warning from '../../assets/icons/warning.png';
-
 
 export const Navigation: React.FC = () => {
     return (
@@ -34,7 +33,7 @@ export const Navigation: React.FC = () => {
 
                 <li className={"nav-item"}>
                     <a href="/#">
-                        <img src={List} alt=""/>
+                        <img src={ToDoList} alt=""/>
                         <p>Planned</p>
                     </a>
                 </li>
