@@ -1,6 +1,11 @@
 import React from 'react';
 import './style.css';
-import {InputConponentProps} from '../../types/types';
+
+export interface InputConponentProps{
+    onInputChange:(value:string)=>void;
+    onPressEnter:(e:React.KeyboardEvent<HTMLInputElement>)=>void;
+    value:string;
+}
 
 export const Input: React.FC<InputConponentProps> = ({onInputChange,onPressEnter,value}) => {
 
