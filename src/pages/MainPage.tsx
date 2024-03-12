@@ -52,7 +52,6 @@ export const MainPage = () => {
     };
 
     return (
-        <body>
             <Navigation/>
             <div className="content">
             <Header />
@@ -81,7 +80,6 @@ export const MainPage = () => {
                 </ul>
             </div>
             </div>
-        </body>
     );
 };
 
